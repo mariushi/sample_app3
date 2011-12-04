@@ -1,3 +1,12 @@
-require 'autotest/growl'
+#require 'autotest/growl'
+## Änderungen am 15.11.
+#require 'rb-fsevent'
 
+## Änderungen am 04.12.
+require "test_notifier/runner/autotest"
 
+Autotest.add_hook :initialize do |autotest|
+  autotest.add_mapping(%r%^spec/(requests)/.*rb$%) do|filename, _|
+    filename
+  end
+end

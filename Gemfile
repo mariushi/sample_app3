@@ -23,6 +23,7 @@ group :development do
   gem 'annotate' , '2.4.0'
   gem 'faker' , '0.3.1'
   gem "sqlite3-ruby", :require => "sqlite3"
+  gem 'rb-fsevent'
 end
 
 group :test  do
@@ -31,6 +32,7 @@ group :test  do
   gem 'spork' , '0.9.0.rc8'
   gem 'factory_girl_rails' , '1.0'
   gem "sqlite3-ruby", :require => "sqlite3"
+  gem 'rb-fsevent'
 end
 
 

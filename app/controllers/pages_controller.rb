@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
   def home
-    @title = "Home"
+    @title = "HomeX"
   end
 
   def contact
@@ -11,5 +11,14 @@ class PagesController < ApplicationController
   def about
     @title = "About"
   end
+
+  def help
+    @title = "Help"
+  end
+
+  ## Änderungen für Exercise 3.5.2
+  #def base_title
+   # @base_title = "Ruby on Rails Tutorial Sample App"
+  #end
 end
 
