@@ -4,9 +4,7 @@ describe PagesController do
   render_views
 
   before(:each) do
-    def base_title
-      @base_title = "Ruby on Rails Tutorial Sample App"
-    end
+    @base_title = "Ruby on Rails Tutorial Sample App"
   end
 
   describe "GET 'home'" do
@@ -14,7 +12,7 @@ describe PagesController do
       get 'home'
       response.should be_success
     end
-    
+
     it "should have the right title" do
       get 'home'
       response.should have_selector("title",
