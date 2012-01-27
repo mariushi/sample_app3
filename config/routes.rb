@@ -1,5 +1,8 @@
 SampleApp3::Application.routes.draw do
+  # get "sessions/new" #nicht in Listing 9.2
+
   resources :users
+  ressources :sessions, :only => [:new, :create, :destroy]
 
   match '/signup',  :to => 'users#new'
   match '/contact', :to => 'pages#contact'
