@@ -38,6 +38,7 @@ describe SessionsController do
         post :create, :session => @attr
         flash.now[:error].should =~ /invalid/i
       end
+
       describe "with valid email and password" do
 
         before(:each) do

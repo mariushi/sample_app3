@@ -184,3 +184,11 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+/* Aus Listing 10.22, Darstellung des Listenindexes für die Userübersicht */
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
+}

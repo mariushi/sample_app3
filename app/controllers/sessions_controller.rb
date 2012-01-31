@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
 
   def new
+    # render 'new' - Listing 9.6
     @title = "Sign in"
   end
 
@@ -13,7 +14,7 @@ class SessionsController < ApplicationController
       render 'new'
     else
       sign_in user
-      redirect_to user
+      redirect_back_or user
     end
   end
 
